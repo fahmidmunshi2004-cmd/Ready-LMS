@@ -1,0 +1,71 @@
+.sidebar-area {
+    border: 1px solid #E2E8F0;
+    border-radius: 24px;
+    padding: 16px;
+    background: white;
+}
+
+.acc-btn {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: var(--gray-400);
+}
+
+.sidebar-list nav ul li a {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--gray-500);
+    border-radius: 12px;
+    padding: 0 10px;
+    height: 36px;
+}
+
+.sidebar-list nav ul li a.active {
+    border: 1px solid var(--primary-400);
+    color: var(--primary-500);
+    background: var(--primary-50);
+}
+
+.sidebar-list nav ul li a.active img {
+    filter: brightness(0) saturate(100%) invert(30%) sepia(90%) saturate(4000%) hue-rotate(200deg);
+}
+
+
+.sidebar-list ul {
+    margin-bottom: 30px;
+}
+
+.sign-out-btn {
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 88%;
+}
+
+.sign-out-btn a {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--gray-500);
+    border-radius: 8px;
+    padding: 0 24px;
+    height: 60px;
+    background: var(--gray-50);
+    transition: .3s linear;
+    border: 1px solid var(--gray-50);
+}
+
+.sign-out-btn a:hover {
+    border: 1px solid var(--primary-400);
+    color: var(--primary-500);
+    background: var(--primary-50);
+}
+
+.sign-out-btn a img {
+    transition: .3s linear;
+}
+
+.sign-out-btn a:hover img {
+    filter: brightness(0) saturate(100%) invert(30%) sepia(90%) saturate(4000%) hue-rotate(200deg);
+}

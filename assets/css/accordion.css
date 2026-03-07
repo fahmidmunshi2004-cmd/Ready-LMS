@@ -1,0 +1,25 @@
+.icon-rotate {
+    transition: transform 0.3s ease;
+}
+
+.acc-btn.active .icon-rotate {
+    transform: rotate(0);
+}
+.acc-btn .icon-rotate {
+    transform: rotate(180deg);
+}
+
+.submenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    margin-top: 20px;
+}
+
+.acc-btn.active {
+    color: var(--primary-500);
+}
+
+.acc-btn.active img {
+    filter: brightness(0) saturate(100%) invert(30%) sepia(90%) saturate(4000%) hue-rotate(200deg);
+}
