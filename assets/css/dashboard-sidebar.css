@@ -69,3 +69,23 @@
 .sign-out-btn a:hover img {
     filter: brightness(0) saturate(100%) invert(30%) sepia(90%) saturate(4000%) hue-rotate(200deg);
 }
+
+.sidebar-togglrbtn {
+    background: #FBFBFE;
+    z-index: 9;
+    padding: 8px;
+}
+
+.sidebar-togglrbtn button {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+}
+
+.sidebar-togglrbtn button i {
+    font-size: 18px;
+}
+
+.sidebar-togglrbtn {
+    display: none !important;
+}

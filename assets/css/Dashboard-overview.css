@@ -1,12 +1,19 @@
-.dashboard-main-content-area{
+.dashboard-main-content-area {
     margin-bottom: 60px;
 }
+
 .author-img img {
     width: 105px;
     height: 105px;
     border-radius: 100%;
     object-fit: cover;
     margin-bottom: 15px;
+}
+
+.author-img-2 img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
 }
 
 .author-img a {
@@ -25,6 +32,23 @@
     z-index: 1;
 }
 
+.author-2 {
+    padding: 0 30px;
+    border-right: 1px solid var(--gray-200);
+    flex: 0 0 auto;
+}
+
+.author-2:last-child {
+    border-right: 1px solid transparent;
+}
+
+.author-img-2 a::before {
+    width: 6px;
+    height: 6px;
+    bottom: 8px;
+    right: 4px;
+}
+
 .author-img a::after {
     position: absolute;
     content: '';
@@ -36,11 +60,32 @@
     right: 8px;
 }
 
+.author-img-2 a::after {
+    width: 10px;
+    height: 10px;
+    bottom: 6px;
+    right: 2px;
+}
+
 .author-info-box {
     border: 1px solid #E2E8F0;
     border-radius: 24px;
     padding: 24px;
     background: white;
+}
+
+.author-2 h3 {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: var(--gray-600);
+}
+
+.author-2 span {
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: -0.02em;
+    color: var(--gray-400);
 }
 
 .social-icon a {
@@ -443,23 +488,27 @@
 
 
 
+.author-wrapper::-webkit-scrollbar,
 .active-roadmap-box .wrapper::-webkit-scrollbar {
     width: 8px;
     height: 8px;
 }
 
+.author-wrapper::-webkit-scrollbar-track,
 .active-roadmap-box .wrapper::-webkit-scrollbar-track {
-    background: #eeeeee00;
+    background: #eeeeeeab;
 }
 
 
+.author-wrapper::-webkit-scrollbar-thumb,
 .active-roadmap-box .wrapper::-webkit-scrollbar-thumb {
     background: #E2E8F0;
     border-radius: 10px;
 }
 
+.author-wrapper::-webkit-scrollbar-thumb:hover,
 .active-roadmap-box .wrapper::-webkit-scrollbar-thumb:hover {
-    background: #E2E8F0;
+    background: #bdbaba;
 }
 
 .achievements-icon {

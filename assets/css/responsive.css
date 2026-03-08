@@ -1,0 +1,168 @@
+@media (max-width:1200px) {
+    .author-right-bottom {
+        gap: 12px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .author-info-box .content {
+        align-items: start !important;
+    }
+
+    .resume-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .circular-progress {
+        width: 100px;
+        height: 100px;
+    }
+
+    .circular-progress::before {
+        width: 90px;
+        height: 90px;
+    }
+
+    .progress-number {
+        font-size: 24px;
+    }
+
+    .lg\:gap-4 {
+        gap: 1rem;
+    }
+
+    .sidebar-list nav ul li a.active {
+        width: auto;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+@media (max-width:1199px) {
+    .sidebar-area {
+        position: fixed !important;
+        top: 0;
+        border-radius: 0;
+        right: -100%;
+        z-index: 99;
+        transition: .3s linear;
+    }
+
+    .sidebar-area.active {
+        right: 0;
+    }
+
+    .sidebar-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.4);
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s;
+        z-index: 99;
+    }
+
+    .sidebar-overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .sidebar-togglrbtn {
+        display: flex !important;
+    }
+}
+
+@media (max-width:600px) {
+    .author-info-box .content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .author-info-box .content .author {
+        margin: 0 auto;
+    }
+
+    .author-right {
+        width: 100%;
+    }
+
+    .resume-card .row {
+        flex-direction: column-reverse;
+        gap: 16px;
+    }
+
+    .latest-achievements,
+    .active-roadmap-box,
+    .author-info-box,
+    .resume-card {
+        padding: 16px;
+        border-radius: 12px;
+    }
+}
+
+@media (max-width:600px) {
+    .count-card {
+        padding: 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 6px;
+        height: 70px;
+        justify-content: center;
+    }
+
+    .count-card .count-title {
+        margin-bottom: 8px;
+    }
+
+    .count-card .count-number {
+        font-size: 20px;
+        line-height: 1;
+    }
+
+    .author-info-box .content {
+        gap: 16px;
+    }
+
+    .edit-profile-btn button {
+        height: 40px;
+    }
+}
+
+@media (max-width:390px) {
+    .author-right-bottom {
+        gap: 8px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .author-right-top {
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center !important;
+    }
+
+    .author-name {
+        text-align: center;
+    }
+
+    .resume-actions {
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+
+    .achievements-wrapper {
+        gap: 8px;
+    }
+
+    .header h2 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:350px) {
+    .achievements-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

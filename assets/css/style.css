@@ -48,22 +48,6 @@
 }
 
 
-/* font family */
-@font-face {
-    font-family: "Satoshi";
-    src: url("../fonts/satoshi/Satoshi-Variable.woff2") format("woff2");
-    font-weight: 100 900;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Satoshi";
-    src: url("../fonts/satoshi/Satoshi-VariableItalic.woff2") format("woff2");
-    font-weight: 100 900;
-    font-style: italic;
-    font-display: swap;
-}
 
 html,
 body {
@@ -129,4 +113,18 @@ h6{
     background: transparent;
     color: var(--gray-900);
     border: 1px solid var(--primary-500);
+}
+
+/*=========== common-btn =======*/
+.common-btn button {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    transition: .3s linear;
+    border-radius: 25px;
+    padding: 0 39px;
+    height: 48px;
+    background: var(--primary-500);
+    border: 1px solid transparent;
 }
