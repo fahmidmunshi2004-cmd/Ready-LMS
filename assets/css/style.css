@@ -93,7 +93,8 @@ ul {
     margin: 0;
     padding: 0;
 }
-.gap-10{
+
+.gap-10 {
     gap: 40px;
 }
 
@@ -103,7 +104,7 @@ h2,
 h3,
 h4,
 h5,
-h6{
+h6 {
     margin: 0;
 }
 
@@ -127,4 +128,16 @@ h6{
     height: 48px;
     background: var(--primary-500);
     border: 1px solid transparent;
+}
+
+/*============ sidebar-overlay ==========*/
+.sidebar-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    z-index: 99;
+    backdrop-filter: blur(3px);
 }

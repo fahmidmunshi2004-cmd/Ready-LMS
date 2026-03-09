@@ -1,5 +1,4 @@
 const accBtns = document.querySelectorAll('.acc-btn');
-
 accBtns.forEach((btn) => {
     const accSubmenu = btn.nextElementSibling;
     btn.classList.add('active');
@@ -13,5 +12,3 @@ accBtns.forEach((btn) => {
         }
     });
 });
-
-
