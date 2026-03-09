@@ -61,6 +61,7 @@
         visibility: hidden;
         transition: .3s;
         z-index: 99;
+        backdrop-filter: blur(3px);
     }
 
     .sidebar-overlay.active {

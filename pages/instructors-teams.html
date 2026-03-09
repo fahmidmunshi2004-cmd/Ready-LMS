@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Courses</title>
+
+
+    <!-- Font Awesome 6 cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/dashboard-sidebar.css">
+    <link rel="stylesheet" href="../assets/css/accordion.css">
+    <link rel="stylesheet" href="../assets/css/instructors-teams.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+
+    <!-- fav icon -->
+    <link rel="shortcut icon" href="../assets/images/icons/fav-icon/fav-icon.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <main>
+        <section class="dashboard-main-content-area mt-10 mb-10">
+            <div class="container">
+                <!-- Toggle Button -->
+                <div
+                    class="sidebar-togglrbtn common-btn d-flex align-items-center justify-content-end position-sticky top-0">
+                    <button id="menuBtn" class="p-0 mb-3">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+
+                <!-- Overlay -->
+                <div class="sidebar-overlay"></div>
+                <div class="row g-6">
+
+                    <!-- side bar -->
+                    <div class="col-lg-3">
+                        <div class="sidebar-area h-100 position-relative">
+                            <div class="sidebar-list">
+                                <nav>
+                                    <ul>
+                                        <li>
+                                            <ul class="sidebar-list list-unstyled p-0">
+                                                <li>
+                                                    <button
+                                                        class="acc-btn d-flex align-items-center justify-content-between w-100">
+                                                        Academics
+                                                        <img src="../assets/images/icons/up-angel.svg" alt=""
+                                                            class="icon-rotate" width="16">
+                                                    </button>
+                                                    <ul class="submenu list-unstyled">
+                                                        <li class="mb-2">
+                                                            <a href="../pages/dashbord.html"
+                                                                class="d-flex align-items-center gap-2">
+                                                                <img src="../assets/images/icons/objects-column-1.png"
+                                                                    alt="" width="16">
+                                                                Dashboard Overview
+                                                            </a>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <a href="../pages/my-coursess.html"
+                                                                class="d-flex align-items-center gap-2">
+                                                                <img src="../assets/images/icons/e-learning-1.png"
+                                                                    alt="" width="16">
+                                                                My Courses
+                                                            </a>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <a href="#" class="d-flex align-items-center gap-2">
+                                                                <img src="../assets/images/icons/heart-1.png" alt=""
+                                                                    width="16">
+                                                                Wish List
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li>
+                                            <ul class="sidebar-list list-unstyled p-0">
+                                                <li>
+                                                    <button
+                                                        class="acc-btn d-flex align-items-center justify-content-between w-100">
+                                                        community
+                                                        <img src="../assets/images/icons/up-angel.svg" alt=""
+                                                            class="icon-rotate" width="16">
+                                                    </button>
+                                                    <ul class="submenu list-unstyled">
+                                                        <li class="mb-2">
+                                                            <a href="../pages/instructors-teams.html"
+                                                                class="d-flex align-items-center gap-2 active">
+                                                                <img src="../assets/images/icons/employees-1.png" alt=""
+                                                                    width="16">
+                                                                Instructors & Teams
+                                                            </a>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <a href="#" class="d-flex align-items-center gap-2">
+                                                                <img src="../assets/images/icons/message.png" alt=""
+                                                                    width="16">
+                                                                Messages
+                                                            </a>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <a href="#" class="d-flex align-items-center gap-2">
+                                                                <img src="../assets/images/icons/newspaper-1.png" alt=""
+                                                                    width="16">
+                                                                Forum
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li>
+                                            <ul class="sidebar-list list-unstyled p-0">
+                                                <li>
+                                                    <button
+                                                        class="acc-btn d-flex align-items-center justify-content-between w-100">
+                                                        settings
+                                                        <img src="../assets/images/icons/up-angel.svg" alt=""
+                                                            class="icon-rotate" width="16">
+                                                    </button>
+                                                    <ul class="submenu list-unstyled">
+                                                        <li class="mb-2">
+                                                            <a href="#" class="d-flex align-items-center gap-2">
+                                                                <img src="../assets/images/icons/admin-alt-1.png" alt=""
+                                                                    width="16">
+                                                                Account & Privacy
+                                                            </a>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <a href="#" class="d-flex align-items-center gap-2">
+                                                                <img src="../assets/images/icons/images-1.png" alt=""
+                                                                    width="16">
+                                                                Billing & Affiliate
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </nav>
+
+                                <div class="sign-out-btn mt-auto position-absolute">
+                                    <a href="#" class="d-flex align-items-center justify-content-between">
+                                        Sign Out
+                                        <img src="../assets/images/icons/login-square-01.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- main Content -->
+                    <div class="col-lg-12 col-xl-9">
+                        <div class="instructors-area">
+
+                            <div class="instructors-header d-flex align-items-center justify-content-between gap-2">
+                                <div class="instructors-header-left">
+                                    <h2 class="instructors-title">
+                                        Instructors You Follow
+                                    </h2>
+                                    <p class="instructors-text">
+                                        Book 1:1 sessions or join group reviews with industry experts.
+                                    </p>
+                                </div>
+                                <div class="instructors-header-right d-flex align-items-center gap-2">
+                                    <div class="search-box position-relative">
+                                        <input type="text" placeholder="My courses">
+                                        <img class="search-icon position-absolute"
+                                            src="../assets/images/icons/search-01.png" alt="">
+                                    </div>
+                                    <div class="filter-btn">
+                                        <button>
+                                            <img src="../assets/images/icons/align-center.png" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="instructors-body d-grid">
+
+                                <div class="instructors-card">
+                                    <div class="instructors-card-header d-flex align-center justify-content-between">
+
+                                        <div class="instructors-author-img">
+                                            <a href="#" class="d-inline-block">
+                                                <img src="../assets/images/author/author-01.png" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="reviews">
+                                            <div class=" d-flex align-center flex-column gap-1">
+                                                <span class="rating-score d-flex align-center">
+                                                    <img class="star-img" src="../assets/images/icons/Star.png" alt="">
+                                                    5.0
+                                                </span>
+                                                <span class="rating-count">(956 Reviews)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="instructors-card-body">
+                                        <div class="instructor-info">
+                                            <h4 class="name">
+                                                Tarek Rahman
+                                            </h4>
+                                            <div class="cta">
+                                                UX Researcher @ Adobe
+                                            </div>
+                                            <p class="text">
+                                                User research methods, usability testing, and insight-driven design
+                                                decisions.
+                                            </p>
+                                            <div
+                                                class="instructor-btn common-btn d-flex align-center justify-content-between">
+                                                <button class="instructor-message-btn">
+                                                    Message
+                                                </button>
+                                                <button class="btn-hover">
+                                                    Book 1:1
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="instructors-card">
+                                    <div class="instructors-card-header d-flex align-center justify-content-between">
+
+                                        <div class="instructors-author-img">
+                                            <a href="#" class="d-inline-block">
+                                                <img src="../assets/images/author/author-02.png" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="reviews">
+                                            <div class=" d-flex align-center flex-column gap-1">
+                                                <span class="rating-score d-flex align-center">
+                                                    <img class="star-img" src="../assets/images/icons/Star.png" alt="">
+                                                    4.0
+                                                </span>
+                                                <span class="rating-count">(12k Reviews)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="instructors-card-body">
+                                        <div class="instructor-info">
+                                            <h4 class="name">
+                                                Ahmed Khan
+                                            </h4>
+                                            <div class="cta">
+                                                Digital Marketer @ HubSpot
+                                            </div>
+                                            <p class="text">
+                                                Helps learners grow traffic, leads, and conversions through data-driven
+                                                marketing.
+                                            </p>
+                                            <div
+                                                class="instructor-btn common-btn d-flex align-center justify-content-between">
+                                                <button class="instructor-message-btn">
+                                                    Message
+                                                </button>
+                                                <button class="booked-btn">
+                                                    Fully Booked
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="instructors-card">
+                                    <div class="instructors-card-header d-flex align-center justify-content-between">
+
+                                        <div class="instructors-author-img">
+                                            <a href="#" class="d-inline-block">
+                                                <img src="../assets/images/author/author-06.png" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="reviews">
+                                            <div class=" d-flex align-center flex-column gap-1">
+                                                <span class="rating-score d-flex align-center">
+                                                    <img class="star-img" src="../assets/images/icons/Star.png" alt="">
+                                                    5.0
+                                                </span>
+                                                <span class="rating-count">(46 Reviews)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="instructors-card-body">
+                                        <div class="instructor-info">
+                                            <h4 class="name">
+                                                Omar Hassan
+                                            </h4>
+                                            <div class="cta">
+                                                Backend Architect @ Stripe
+                                            </div>
+                                            <p class="text">
+                                                API design, microservices, and scalable backend system architecture.
+                                            </p>
+                                            <div
+                                                class="instructor-btn common-btn d-flex align-center justify-content-between">
+                                                <button class="instructor-message-btn">
+                                                    Message
+                                                </button>
+                                                <button class="btn-hover">
+                                                    Book 1:1
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="instructors-card">
+                                    <div class="instructors-card-header d-flex align-center justify-content-between">
+
+                                        <div class="instructors-author-img">
+                                            <a href="#" class="d-inline-block">
+                                                <img src="../assets/images/author/author-04.png" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="reviews">
+                                            <div class=" d-flex align-center flex-column gap-1">
+                                                <span class="rating-score d-flex align-center">
+                                                    <img class="star-img" src="../assets/images/icons/Star.png" alt="">
+                                                    5.0
+                                                </span>
+                                                <span class="rating-count">(3k Reviews)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="instructors-card-body">
+                                        <div class="instructor-info">
+                                            <h4 class="name">
+                                                Lisa Rodriguez
+                                            </h4>
+                                            <div class="cta">
+                                                Data Scientist @ Netflix
+                                            </div>
+                                            <p class="text">
+                                                Teaches Python, machine learning fundamentals, and data storytelling.
+                                            </p>
+                                            <div
+                                                class="instructor-btn common-btn d-flex align-center justify-content-between">
+                                                <button class="instructor-message-btn">
+                                                    Message
+                                                </button>
+                                                <button class="btn-hover">
+                                                    Book 1:1
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="instructors-card">
+                                    <div class="instructors-card-header d-flex align-center justify-content-between">
+
+                                        <div class="instructors-author-img">
+                                            <a href="#" class="d-inline-block">
+                                                <img src="../assets/images/author/author-03.png" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="reviews">
+                                            <div class=" d-flex align-center flex-column gap-1">
+                                                <span class="rating-score d-flex align-center">
+                                                    <img class="star-img" src="../assets/images/icons/Star.png" alt="">
+                                                    5.0
+                                                </span>
+                                                <span class="rating-count">(345 Reviews)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="instructors-card-body">
+                                        <div class="instructor-info">
+                                            <h4 class="name">
+                                                Daniel Foster
+                                            </h4>
+                                            <div class="cta">
+                                                DevOps Engineer @ AWS
+                                            </div>
+                                            <p class="text">
+                                                Cloud deployment, CI/CD pipelines, and infrastructure best practices.
+                                            </p>
+                                            <div
+                                                class="instructor-btn common-btn d-flex align-center justify-content-between">
+                                                <button class="instructor-message-btn">
+                                                    Message
+                                                </button>
+                                                <button class="btn-hover">
+                                                    Book 1:1
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="instructors-card">
+                                    <div class="instructors-card-header d-flex align-center justify-content-between">
+
+                                        <div class="instructors-author-img">
+                                            <a href="#" class="d-inline-block">
+                                                <img src="../assets/images/author/author-07.png" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="reviews">
+                                            <div class=" d-flex align-center flex-column gap-1">
+                                                <span class="rating-score d-flex align-center">
+                                                    <img class="star-img" src="../assets/images/icons/Star.png" alt="">
+                                                    4.0
+                                                </span>
+                                                <span class="rating-count">(534 Reviews)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="instructors-card-body">
+                                        <div class="instructor-info">
+                                            <h4 class="name">
+                                                Priya Sharma
+                                            </h4>
+                                            <div class="cta">
+                                                Product Manager @ Microsoft
+                                            </div>
+                                            <p class="text">
+                                                Guides students on product strategy, user research, and roadmap
+                                                planning.
+                                            </p>
+                                            <div
+                                                class="instructor-btn common-btn d-flex align-center justify-content-between">
+                                                <button class="instructor-message-btn">
+                                                    Message
+                                                </button>
+                                                <button class="booked-btn">
+                                                    Fully Booked
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="study-squads-area">
+
+                                <div class="study-squads-top-content d-flex align-center justify-content-between">
+                                    <h2 class="instructors-title mb-0 d-flex align-items-center">
+                                        Your Study Squads
+                                    </h2>
+                                    <div class="common-btn create-squad-btn">
+                                        <button class="btn-hover d-flex align-items-center gap-2">
+                                            <img src="../assets/images/icons/plus-01.png" alt="img">
+                                            Create Squad
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="study-squads-bottom-content d-grid">
+
+                                    <div class="study-squads-card">
+                                        <div class="icon">
+                                            <img src="../assets/images/icons/react-icon.png" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            <h4 class="name">
+                                                React Runners
+                                            </h4>
+                                            <span class="d-flex align-center">
+                                                <cite>Next Session:</cite> Tomorrow, 2 PM
+                                            </span>
+                                        </div>
+                                        <div class="card-author">
+                                            <div class="img d-flex align-center">
+                                                <img src="../assets/images/author/author-01.png" alt="">
+                                                <img class="img-more" src="../assets/images/author/author-03.png"
+                                                    alt="">
+                                                <span class="img-more more-author">
+                                                    +28
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="study-squads-card">
+                                        <div class="icon">
+                                            <img src="../assets/images/icons/react-icon.png" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            <h4 class="name">
+                                                Figma Fanatics
+                                            </h4>
+                                            <span class="d-flex align-center">
+                                                Active Now
+                                            </span>
+                                        </div>
+                                        <div
+                                            class="common-btn d-flex align-center justify-content-between study-squads-card-btn">
+                                            <button class="btn-hover">
+                                                Join
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- js link -->
+    <script src="../assets/js/accordion.js"></script>
+    <script src="../assets/js/sidebar-active.js"></script>
+
+    <!-- Bootstrap JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
