@@ -141,3 +141,12 @@ h6 {
     z-index: 99;
     backdrop-filter: blur(3px);
 }
+
+.dashboard-main-content-area {
+    margin-bottom: 60px; 
+}
+
+
+.ml-auto{
+    margin-left: auto;
+}

@@ -97,8 +97,8 @@
     height: 8px;
     border-radius: 100%;
     background: #22C55E;
-    bottom: 3px;
-    right: 5px;
+    bottom: 1px;
+    right: 4px;
     z-index: 1;
 }
 
@@ -109,8 +109,8 @@
     height: 12px;
     border-radius: 100%;
     background: #ffffff;
-    bottom: 1px;
-    right: 3px;
+    bottom: -1px;
+    right: 2px;
 }
 
 .instructors-card {
@@ -238,7 +238,7 @@
 }
 
 .study-squads-area {
-    margin-top: 55px;
+    margin-top: 40px;
 }
 
 .create-squad-btn button {
@@ -249,6 +249,7 @@
     font-size: 16px;
     letter-spacing: -0.02em;
     color: var(--primary-500);
+    padding: 0 27px;
 }
 
 .create-squad-btn img {
@@ -344,7 +345,7 @@
 
 .study-squads-card-btn button {
     height: 40px;
-    padding: 0 27px;
+    padding: 0 27.2px;
     font-size: 14px;
 }
 
@@ -398,9 +399,21 @@
     .study-squads-top-content button {
         height: 40px;
     }
-    
+
     .study-squads-card .card-info cite,
-    .study-squads-card .card-info span{
+    .study-squads-card .card-info span {
         white-space: normal;
     }
+}
+
+.active_status_icon {
+    width: 8px;
+    height: 8px;
+    display: block;
+    border-radius: 100%;
+    background: #22C55E;
+}
+
+.active_status {
+    gap: 6px;
 }
